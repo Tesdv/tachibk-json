@@ -54,5 +54,5 @@ tachibk-json/
 
 ## Notes
 
-> This tool only supports backup files from Aniyomi version 0.16.0.0 - 0.16.4.3 and similar Tachiyomi versions
+> This tool only supports backup files around Aniyomi version 0.16.4.3 and similar Mihon versions.
 > If you use a different version, the backup format may have changed and this tool may not work correctly.
