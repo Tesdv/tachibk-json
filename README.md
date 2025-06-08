@@ -54,5 +54,5 @@ tachibk-json/
 
 ## Notes
 
-- The `schema_pb2.py` file must be generated from your Tachiyomi protobuf schema.
-- Only non-standard dependency is `protobuf`.
+> This tool only supports backup files from Aniyomi version 0.16.0.0 - 0.16.4.3 and similar Tachiyomi versions
+> If you use a different version, the backup format may have changed and this tool may not work correctly.
