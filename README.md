@@ -17,16 +17,6 @@ This project provides a simple graphical utility for converting Tachiyomi/Aniyom
    - Use the GUI to select a `.tachibk` or `.json` file.
    - The tool will automatically detect the file type and let you convert and save to the other format.
 
-## File Structure
-
-```
-tachibk-json/
-├── build.py
-├── schema_pb2.py   # Protobuf schema
-├── requirements.txt
-└── README.md
-```
-
 ## Notes
 
 > This tool only supports backup files around Aniyomi version 0.16.4.3 and similar Mihon versions.  
