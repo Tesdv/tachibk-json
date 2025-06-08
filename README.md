@@ -1,4 +1,4 @@
-# Tachibk JSON Tools
+# Tachibk to JSON Converter
 
 This project provides a simple graphical utility for converting Tachiyomi/Aniyomi backup files (`.tachibk`) to JSON and vice versa.
 
