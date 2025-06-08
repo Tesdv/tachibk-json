@@ -21,8 +21,8 @@ This project provides a simple graphical utility for converting Tachiyomi/Aniyom
 
 ```
 tachibk-json/
-├── build.py        # GUI source code (for developers)
-├── schema_pb2.py   # Protobuf schema (generated, for developers)
+├── build.py
+├── schema_pb2.py   # Protobuf schema
 ├── requirements.txt
 └── README.md
 ```
