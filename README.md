@@ -1,58 +1,33 @@
 # Tachibk JSON Tools
 
-This project provides utilities for converting Tachiyomi backup files (`.tachibk`) to JSON and vice versa, as well as marking all chapters as read in exported JSON files.
+This project provides a simple graphical utility for converting Tachiyomi/Aniyomi backup files (`.tachibk`) to JSON and vice versa.
 
 ## Features
 
-- **Convert** `.tachibk` files to readable `.json` format and back.
-- **Mark all chapters as read** in JSON backup files.
-
-## Requirements
-
-- Python 3.8+
-- [protobuf](https://pypi.org/project/protobuf/) (`google.protobuf`)
-
-Install dependencies:
-```sh
-pip install -r requirements.txt
-```
+- **Convert** `.tachibk` files to readable `.json` format and back using a user-friendly GUI.
+- No command-line usage required.
 
 ## Usage
 
-### 1. Prepare Input Files
+1. **Download the latest release**  
+   - Get the standalone `.exe` from the [Releases](../../releases) page.
 
-- Place your `.tachibk` or `.json` files in the `.input` directory.
-
-### 2. Convert Files
-
-Run the conversion script:
-```sh
-python conv.py
-```
-- If `.tachibk` files are found in `.input`, they will be converted to `.json` in `.output`.
-- If `.json` files are found in `.input`, they will be converted to `.tachibk` in `.output`.
-
-### 3. Mark Chapters as Read (Optional)
-
-To set all chapters as read in all JSON files in `.output`, run:
-```sh
-python .output/setread.py
-```
+2. **Run the Tool**  
+   - Double-click the `.exe` file.
+   - Use the GUI to select a `.tachibk` or `.json` file.
+   - The tool will automatically detect the file type and let you convert and save to the other format.
 
 ## File Structure
 
 ```
 tachibk-json/
-├── .input/         # Place your .tachibk or .json files here
-├── .output/        # Output files and setread.py script
-│   └── setread.py
-├── conv.py         # Main conversion script
-├── schema_pb2.py   # Protobuf schema (generated)
+├── build.py        # GUI source code (for developers)
+├── schema_pb2.py   # Protobuf schema (generated, for developers)
 ├── requirements.txt
 └── README.md
 ```
 
 ## Notes
 
-> This tool only supports backup files around Aniyomi version 0.16.4.3 and similar Mihon versions.
+> This tool only supports backup files around Aniyomi version 0.16.4.3 and similar Mihon versions.  
 > If you use a different version, the backup format may have changed and this tool may not work correctly.
